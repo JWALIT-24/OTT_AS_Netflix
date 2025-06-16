@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Email/Password</title>
+    <link rel="stylesheet" href="fgps.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="head">
+        <nav>
+          <span><a href="netflix.html"><img width="120" src="logo.svg" alt="" /></a></span>
+        <a href="signUp2.php"> <button class="btn btn-red-sm">Sign In</button></a> 
+        </nav>
+      </div>
+
+      <div class="login-content">
+        <div class="passreset">
+          <h1>Forgot Email/Password</h1>
+          <p>How would you like to reset your password?</p>
+          <div class="reset-choice">
+            <div class="input">
+              <input type="radio" id="resem" name="resetMethod" />
+              <label for="resem"> Email </label>
+              <div class="helper"></div>
+            </div>
+            
+
+            <div class="input">
+              <input type="radio" id="restm" name="resetMethod" />
+              <label for="restm"> Text Message(SMS) </label>
+              <div class="helper"></div>
+            </div>
+          </div>
+
+          <div class="button-container" id="emailForm">
+            <p>
+              We will send you an email with instructions on how to reset your
+              password.
+            </p>
+
+            <input
+              type="email"
+              id="eminp"
+              placeholder="name@example.com"
+              name="email"
+            />
+            <div>
+              <button type="submit" onclick="submitForm('email')">
+                Mail Me
+              </button>
+            </div>
+          </div>
+          <div class="button-container" id="textForm">
+            <p>
+              We will text you a verification code to reset your password.
+              Message and data rates may apply.
+            </p>
+<input  type="tel" id="phinp" placeholder="Enter your phone number" tabindex="0"/>
+            <div>
+              <button type="submit" onclick="submitForm('text')">
+                Text Me
+              </button>
+            </div>
+          </div> <center><a href="findacc.html" class="forgotpasswordlink">
+            I can't remember my password!</a></center>
+        </div>
+      </div>
+    </div>
+    <script>
+        function toggleDisplay() {
+          var emailForm = document.getElementById("emailForm");
+          var textForm = document.getElementById("textForm");
+    
+          if (document.getElementById("resem").checked) {
+            emailForm.style.display = "block";
+            textForm.style.display = "none";
+          } else if (document.getElementById("restm").checked) {
+            emailForm.style.display = "none";
+            textForm.style.display = "block";
+          }
+        }
+    
+        function submitForm(method) {
+          if (method === "email") {
+            var email = document.getElementById("eminp").value;
+                     } else if (method === "text") {
+            var phone = document.getElementById("phinp").value;
+          }
+        }
+        document.getElementById("emailForm").style.display = "none";
+    document.getElementById("textForm").style.display = "none";
+
+    
+        var radios = document.getElementsByName("resetMethod");
+        for (var i = 0; i < radios.length; i++) {
+          radios[i].addEventListener("change", toggleDisplay);
+        }
+      </script>
+  </body>
+</html>

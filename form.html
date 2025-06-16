@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inside Table</title>
+</head>
+<body bgcolor="#454f8a">
+    <h1 align="center">Details Entry Form</h1>
+    <form action="details_entry.php" method="post">
+        <div align="center">
+            <table border="3" align="center">
+                <tr>
+                    <th>First Name</th>
+                    <td><input type="text" name="first_name"></td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td><input type="text" name="last_name"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <th>Telephone</th>
+                    <td><input type="tel" name="phone"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Submit" name="save"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

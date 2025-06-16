@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Find My Account</title>
+  <link rel="stylesheet" href="findacc.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="head">
+    <nav>
+      <span><a href="netflix.html"><img width="120" src="logo.svg" alt="" /></a></span>
+      <a href="signUp2.html"> <button class="btn btn-red-sm">Sign In</button> </a> 
+    </nav>
+  </div>
+
+  <section class="reset-password-container" data-uia="reset-password-container">
+    <h1>Forgot Email/Password</h1>
+    <p>Please provide this information to help us find your account (all fields required):</p>
+   <form action="reset_pass.php" method="post">
+     <div class="input-container">
+      <label class="label input-label reset-password-input" id="lbl-firstName">
+    <span class="label-text">Username on the account</span>
+    <input data-uia="firstName" class="text-input" name="username" id="firstName" type="text" placeholder="" tabindex="0"  />
+  </label>
+  <label class="label input-label reset-password-input" id="lbl-lastName">
+   <span class="label-text">Email </span>
+   <input  class="text-input" name="email" id="email" type="text" placeholder="" tabindex="0"  />
+      </label>
+      <label class="label input-label reset-password-input" id="lbl-cardNumber">
+        <span class="label-text">New Password</span>
+        <input  class="text-input" name="newpass" id="cardNumber" type="text" placeholder="" tabindex="0"  />
+      </label>
+    </div>
+    <div id="fillMessage" style="color: red;"></div> <!-- Add this div for displaying the fill message -->
+    <div class="btn-bar" >
+      <button class="btn disabled btn-blue btn-small" type="Submit" >Change Password </button>
+    </div></form>
+  </section>
+  
+
+
+</body>
+</html>

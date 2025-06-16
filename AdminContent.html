@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <link href="../css/SignUp.css" rel="stylesheet"></link> -->
+<style> @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background-color: black;
+    }
+    .main {
+       background-image:url(forgtpass.jpg);
+        background-position: center center;
+        background-size: max(1200px,100vw);
+        background-repeat: no-repeat;
+        height: 780px;
+        position: relative;
+    }
+    
+    .main >.box {
+        height: 780px;
+        width: 100%;
+        opacity: 0.49;
+        position: absolute;
+        top: 0;
+        background-color: black;
+        z-index: 0;
+    }
+    
+    nav {
+        max-width: 60vw;
+        justify-content: space-between;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    
+    h2{
+        position: absolute;
+        top:5%;
+        color:#F6FDC3;
+      }
+    nav img{
+        color: red;
+        width:130px;
+        height:46.2px;
+        position: absolute;
+        z-index:7;
+        top:1.48em;
+        left:2.9em;
+    }
+    
+    nav button {
+        position: relative;
+        z-index: 10;
+    }
+    
+    .hero {
+        font-family: 'Martel Sans', sans-serif;
+        height: calc(100% - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        position: relative;
+        gap: 20px;
+    }
+ 
+    .btn {
+        padding: 3px 8px;
+        font-weight: 400;
+        color: white;
+        background-color: rgba(248, 243, 243, 0.021);
+        border-radius: 4px;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    .hero-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    input[type="text"],select>option{
+        max-width: 285px;
+        width:100%;
+        padding: 10px;
+        background-color: rgba(23, 23, 23, 0.7);
+        margin:10px auto ;
+        border-radius: 5px;
+        color:white;
+     
+height:23px;
+    }
+    select {
+        max-width: 305px;
+        width:100%;
+        height:45px;
+        padding: 10px;
+        background-color: rgba(23, 23, 23, 0.7);
+        margin:8px auto ;
+        border-radius: 5px;
+        color:white;
+        width:460px;
+text-align: center;
+appearance: none;
+border-style:none;
+cursor:pointer;
+}
+option{
+    cursor:pointer;
+        max-width: 305px;
+        width:100%;
+        height:40px;
+        padding: 10px;
+        background-color: rgba(23, 23, 23, 0.7);
+        margin:8px auto ;
+        border-radius: 5px;
+        color:white;
+        width:460px;
+text-align: center;
+appearance: none;
+
+}
+
+    button[type="submit"]{
+        align-items: center;
+        max-width: 285px;
+        width:100%;
+        padding: 10px;
+        margin:10px auto ;
+        border-radius: 5px;
+        width:50%;
+        background-color: rgb(22, 141, 141);
+        cursor:pointer;
+    }
+    button[type="submit"]:hover {
+        background-color: rgb(23, 84, 175);
+        box-shadow: #dd5050 0 0 0 2px;
+    }
+    
+    #tag1{
+     display:flex;
+    justify-content: space-between; 
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    margin-left:5%;
+    cursor:pointer;
+    }
+    
+    .hero{
+        height:450px;
+        width: 350px;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #7a7272a4; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+
+    #bttn > button{
+    border-radius: 5px;
+    height:30px;
+    width:150px;
+    background-color:rgb(39, 49, 189);
+    opacity:.69; border-style:none;
+    border: 2px solid;
+    animation: colorChange 5s linear infinite;
+    }
+    #bttn{
+        color:white;
+        margin:10px;
+    }
+    @keyframes colorChange {
+      0% { border-color: red;
+    border-radius: 5px; }
+      10% { border-color: rgb(95, 17, 131);
+    border-radius: 7px; }
+      20% { border-color: rgb(243, 85, 22);
+    border-radius: 10px; }
+      33% { border-color: rgb(205, 236, 29); 
+        border-radius: 15px;}
+      45%{border-color: rgb(0, 195, 255);
+        border-radius: 20px;}
+      66% { border-color: blue;
+        border-radius: 25px; }
+      80% {border-color: rgb(212, 10, 196);
+        border-radius: 30px;}
+      90% { border-color: rgb(18, 58, 133); }
+      95% { border-color: #6C0345; 
+        border-radius: 20px;}
+      98% { border-color: #1cc5bd; 
+        border-radius: 10px;}
+      100% { border-color: #1D24CA;
+        border-radius: 5px;}
+    }
+    .animated-border {
+      border: 2px solid;
+      animation: colorChange 5s linear infinite;
+      }
+      </style>
+</head>
+<body>
+  <div class="main">
+  <nav><a href= "netflix.html" >
+  <img src="../photo/netflix.png">
+  </a> 
+ <!-- <div>
+   <a href="login2.html">  <button class="btn btn-red-sm">Log In</button>
+   </a></div> -->
+     </nav>
+         <div class="box">
+          </div>
+         <div class="hero"><h2>Add Content</h2>
+            <form action="sendcontent_toDatabaseByadmin.php" method="post">
+                <input  class="animated-border" type= "text" name="Video_name" placeholder="Movie Name">
+                <select class="animated-border" name ="genre">
+                    <option value="">--Select Genre--</option>
+                    <option value="Popular on Netflix">Popular on Netflix</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                </select>
+                <input class="animated-border"  type= "text" name="Video_address" placeholder="Video Address">
+                <input  type= "text"  class="animated-border"  name="img_address" placeholder="Image Address">
+                <button type="submit"> Add to content page</button>
+                    </form>
+            </div>
+ </div>
+  <script src="js/signup.js"></script>   
+</body>
+</html>

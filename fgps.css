@@ -1,0 +1,148 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+    font-size: 16px; 
+    background-image: url(forgtpass.jpg);
+  }
+  
+  .head {
+    background-color: #f9f9f900;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(254, 253, 253, 0);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e2e3e5;
+    font-family: 'Montserrat', sans-serif;
+    color: #5b0bf1fa;
+    cursor: pointer;
+    
+  }
+  .btn:hover{
+    text-decoration: underline;
+}
+  
+  .btn-red-sm {
+    font-size: 14px;
+  }
+  
+  .login-content {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #ffffffc6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .passreset {
+    text-align: center;
+  }
+  
+  .passreset h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .passreset p {
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .reset-choice {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .input label {
+    cursor: pointer;
+  }
+  
+  .input input[type="radio"] {
+    display: inline-block;
+  }
+  
+  .input .helper {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .input input[type="radio"]:checked + .helper {
+    background-color: #ff4d4f;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-container p {
+    margin-bottom: 10px;
+    color: #191212;
+  }
+  
+  .button-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4d4f;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .button-container button:hover {
+    background-color: #fc0000;
+  }
+  
+  .forgotpasswordlink {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .button-container input,
+.button-container button {
+  width: calc(100% - 22px); /* Adjusted width to account for padding and border */
+}
+
+  
+  .forgotpasswordlink:hover {
+    text-decoration: underline;
+  }
+  
