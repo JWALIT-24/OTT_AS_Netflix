@@ -1,11 +1,5 @@
 <h1 align="center">🎬 Netflix Clone – OTT Web App</h1>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Project-Complete-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/HTML-CSS--JS-orange?style=for-the-badge&logo=html5" />
-  <img src="https://img.shields.io/badge/Type-OTT%20Platform-red?style=for-the-badge" />
-</p>
-
 ---
 
 ## 🔥 About the Project
@@ -41,5 +35,43 @@ A full-fledged **OTT Platform UI inspired by Netflix** that includes:
 
 ---
 
-## 📁 Project Structure
+---
+
+## 📸 Screenshots (Optional)
+
+> 💡 *Include screenshots of the signup page, admin panel, and joke page here.*
+
+---
+
+## 💡 How to Run
+
+1. Download the repository
+2. Use a local server (like XAMPP or WAMP) and move files to `htdocs`
+3. Ensure PHP backend is ready (e.g., `adminlogin.php`, `signup.php`, etc.)
+4. Open `admin_login.html` or `form3.html` in browser via `localhost`
+
+---
+
+## 🙌 Author
+
+**Jwalit Lal**  
+📧 [jwalitlal7@gmail.com](mailto:jwalitlal7@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/jwalitlal)  
+🐱 [GitHub - JWALIT-24](https://github.com/JWALIT-24)
+
+---
+
+## ⭐ Credits
+
+- Netflix logo & theme inspiration
+- Font & animation ideas from Google Fonts & CSS Tricks
+- Jokes API integration for user engagement
+
+---
+
+## 📜 License
+
+This project is for educational and demonstration purposes only.
+
+
 
